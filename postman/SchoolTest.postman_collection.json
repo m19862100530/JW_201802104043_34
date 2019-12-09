@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "ef567acd-f24d-42d1-b56f-85621e9fe1a7",
+		"name": "SchoolTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post http://localhost:8080/school.ctl?id=1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"degree\": {\r\n            \"description\": \"硕士\",\r\n            \"id\": 602,\r\n            \"no\": \"07\"\r\n        },\r\n        \"department\": {\r\n            \"description\": \"工程管理\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        },\r\n        \"id\": 6,\r\n        \"name\": \"王严明\",\r\n        \"title\": {\r\n            \"description\": \"IS\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/school.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get http://localhost:8080/school.ctl?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school.ctl?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get http://localhost:8080/school.ctl",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"degree\": {\r\n            \"description\": \"硕士\",\r\n            \"id\": 602,\r\n            \"no\": \"07\"\r\n        },\r\n        \"department\": {\r\n            \"description\": \"工程管理\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        },\r\n        \"id\": 6,\r\n        \"name\": \"王严明\",\r\n        \"title\": {\r\n            \"description\": \"IS\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/school.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete http://localhost:8080/school.ctl?id=1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"degree\": {\r\n            \"description\": \"硕士\",\r\n            \"id\": 602,\r\n            \"no\": \"07\"\r\n        },\r\n        \"department\": {\r\n            \"description\": \"工程管理\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        },\r\n        \"id\": 6,\r\n        \"name\": \"王严明\",\r\n        \"title\": {\r\n            \"description\": \"IS\",\r\n            \"id\": 2,\r\n            \"no\": \"07\",\r\n            \"remarks\": \"\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/school.ctl?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put http://localhost:8080/school.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

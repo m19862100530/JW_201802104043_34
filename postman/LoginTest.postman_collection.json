@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "881a6feb-e3c4-4a65-a611-0d52026b86d8",
+		"name": "LoginTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET http://localhost:8080/login.ctl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/login.ctl?username=01&password=01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login.ctl"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "01"
+						},
+						{
+							"key": "password",
+							"value": "01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
